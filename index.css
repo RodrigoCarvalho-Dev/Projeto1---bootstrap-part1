@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+
+
+
+#box-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(128, 128, 128, 0.11);
+    padding: 15px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.616);
+}
+
+#nav_header{
+    display: flex;
+    gap: 80px;
+}
+
+#nav_header button{
+    background-color: rgba(255, 255, 255, 0.774);
+    border: none;
+    width: 80px;
+    height: 50px;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    font-size: 15px;
+}
+
+#nav_header button:hover{
+background-color: #e0e0e0;
+width: 100px;
+
+}
+
+#buttom_hamburguer{
+    display: none;
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+
+}
+
+ion-icon{
+    width: 40px;
+    height: 40px;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+#section_principal{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 100px;
+    width: 50%;
+}
+
+#section_box1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#text{
+    line-height: 2;
+}
+
+#hours{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#Hours_box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#Hours_box button{
+    background-color: transparent;
+    border: none;
+}
+
+
+#section_button{
+    background-color: #000000;
+    color: white;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    transition: 0.2s ease;
+}
+
+#section_button:hover{
+    background-color: #000000a9;
+}
+
+#section_box2{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    border: 1px solid #000000;
+    padding: 20px;
+    
+}
+
+video{
+    width: 350px;
+}
+
+#register_button{
+    background-color: #000000;
+    color: white;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    transition: 0.2s ease;
+}
+
+#register_button:hover{
+    background-color: #000000a9;;
+}
+
+
+
+
+
+
+
+@media (max-width: 900px){
+    #buttom_hamburguer{
+        display: block;
+    }
+
+    #nav_header{
+        display: none;
+    }
+
+    #box-header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #section_principal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #Hours_box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    video{
+        width: 100%;
+    }
+}
